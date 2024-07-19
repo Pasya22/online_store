@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerLogin
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004594;
+}
+.containerLogin .contentLogin
+{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #c9c6c686;
+    border-radius: 20px;
+    padding: 10px 0;
+}
+.containerLogin .contentLogin h4
+{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+}
+.containerLogin .contentLogin h5
+{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px;
+    animation: blink 1.5s infinite;
+}
+@keyframes blink {
+    0% { color: black; }
+    50% { color: red; }
+    100% { color: black; }
+}
+.containerLogin .contentLogin form
+{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerLogin .contentLogin form .grubInput
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin: 7px 0;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.containerLogin .contentLogin form .grubInput span
+{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerLogin .contentLogin form .grubInput input
+{
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+.containerLogin .contentLogin form .grubcek
+{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.containerLogin .contentLogin form .grubcek .inputcek
+{
+    width: 15px;
+    height: 15px;
+}
+.containerLogin .contentLogin form .grubcek p
+{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.containerLogin .contentLogin form .grubcek h6
+{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: auto;
+}
+.containerLogin .contentLogin form .grubcek h6 a
+{
+    text-decoration: none;
+    color: #000;
+}
+.containerLogin .contentLogin form .btn-kirim 
+{
+    width: 100%;
+}
+.containerLogin .contentLogin form .btn-kirim button
+{
+    width: 100%;
+    height: 40px;
+    background-color: #3faa29fd;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

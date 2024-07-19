@@ -1,0 +1,135 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-pembayaran {
+    width: 100%;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.container-pembayaran .display {
+    padding: 20px;
+}
+
+.container-pembayaran table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+}
+
+.container-pembayaran .table {
+    padding: 20px;
+}
+
+.container-pembayaran th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-weight: 400;
+    color: rgb(15, 15, 15);
+}
+
+.container-pembayaran .card-header {
+    background-color: #ffc300;
+    color: #fff;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.container-pembayaran .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    overflow: hidden;
+}
+
+.container-pembayaran .card-pembayaran {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 30px;
+    background-color: #e7e7e7;
+    overflow: hidden;
+}
+
+.container-pembayaran .input {
+    background-color: #fff;
+    border: none;
+    width: 77%;
+    height: 35px;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+.container-pembayaran .bayar {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 36px;
+    background-color: #32ce24;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+}
+
+.container-pembayaran .bayar2 {
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #fcf16b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-pembayaran strong {
+    align-items: center;
+    display: flex;
+}
+
+.container-pembayaran .lol {
+    display: flex;
+    justify-content: space-between;
+    margin: 36px 0;
+}
+
+.container-pembayaran .bayar-1 {
+    width: 40%;
+}
+.hkembali {
+    position: absolute;
+    right: 17%;
+    bottom: 16%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #fcf16b;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.container-pembayaran form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Nothing-data{
+    display:flex; 
+    justify-content:center; 
+    margin-top:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    font-weight: 400;
+
+}

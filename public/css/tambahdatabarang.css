@@ -1,0 +1,129 @@
+.tambahdataproduk .container {
+    position: absolute;
+    bottom: 0;
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.767);
+    display: flex;
+    flex-direction: column;
+    left: 35%;
+    top: 80px;
+}
+
+.tambahdataproduk h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tambahdataproduk .form-group {
+    margin-bottom: 20px;
+}
+
+.tambahdataproduk label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tambahdataproduk input[type="text"],
+.tambahdataproduk input[type="number"],
+.tambahdataproduk select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* CSS Kategori */
+.tambahdataproduk .label-select-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tambahdataproduk .label-select-container label {
+    margin-bottom: 5px;
+}
+
+.tambahdataproduk .label-select-container select {
+    flex: 2;
+    width: 104%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tambahdataproduk button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tambahdataproduk button:hover {
+    background-color: #0056b3;
+}
+
+
+/* crop */
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 999; /* Ensure overlay is above other content */
+    display: none; /* Hide overlay by default */
+}
+.overlay .cropper-container {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay .cropper-container img
+{
+    width: 50%
+}
+.overlay .cropper-container .cropper-buttons {
+    position: absolute;
+    top: 20px;
+    right: -65px;
+    transform: translateX(-50%);
+}
+.overlay .cropper-container .cropper-buttons button{
+    border: none;
+    display: block;
+    background: transparent;
+    margin: 10px
+}
+.overlay .cropper-container .cropper-buttons button i
+{
+    font-size: 25px;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .tambahdataproduk .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .tambahdataproduk .container {
+        width: 95%;
+    }
+}

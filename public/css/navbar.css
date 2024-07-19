@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.navbarr {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #ffc300;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1000;
+    padding: 0 20px;
+}
+.navbarr .grubpropil {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    margin-left: auto;
+}
+.navbarr span .fa-comment-dots {
+    font-size: 25px;
+    color: #111010;
+}
+.navbarr .grubpropil .propil {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    padding: 0 5px;
+    /* background-color: #FFEC80;
+    border-radius: 25px; */
+    margin-left: auto;
+}
+.navbarr .grubpropil .propil .spanprofil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.navbarr .grubpropil .propil .spanprofil img {
+    width: 30px;
+    height: 30px;
+}
+.navbarr .grubpropil .propil .namapropil {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+.navbarr .grubpropil .propil .namapropil .caretIcon.open {
+    transform: rotate(180deg);
+}
+.navbarr .grubpropil .propil .namapropil .fa-caret-down {
+    font-size: 20px;
+    transition: rotate 0.5s;
+}
+.navbarr .grubpropil .propil .namapropil .fa-caret-down.open {
+    transform: rotate(180deg);
+}
+.navbarr .grubpropil .propil .namapropil h5 {
+    text-align: center;
+    width: 100%;
+}
+.navbarr .grubpropil .cardpropil {
+    width: 150px;
+    height: 0;
+    background-color: #c4c4c4;
+    border-radius: 8px;
+    position: absolute;
+    margin-top: 80px;
+    right: 20px;
+    overflow: hidden;
+    transform: translateY(50%);
+    transition: height 0.5s ease;
+}
+.navbarr .grubpropil .cardpropil.open {
+    height: 100px;
+    border: 2px solid #333;
+}
+.navbarr .grubpropil .cardpropil .isicardpropil {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    width: 100%;
+    height: 50%;
+}
+.navbarr .grubpropil .cardpropil .isicardpropil .fa-arrow-right-from-bracket {
+    padding-left: 5px;
+    margin-top: 2px;
+}
+.navbarr .grubpropil .cardpropil .garis {
+    border-bottom: 1px solid #333;
+}
+.navbarr .grubpropil .cardpropil .isicardpropil:hover {
+    background-color: #ffc300;
+}

@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header
+{
+    /* background-color: #333; */
+    height: 100vh;
+    padding-top: 80px;
+    top: 0;
+    position: sticky;
+}
+.navSamping 
+{
+    display: flex;
+    flex-direction: column;
+    /* position: sticky; */
+    width: 70px;
+    height: 100%;
+    top: 0;
+    /* bottom: 0; */
+    /* margin-top: auto; */
+    margin-right: 20px;
+    background-color: #FFC300;
+    color: white;
+    padding: 20px 0 0 10px;
+    transition: width 0.6s ease;
+}
+.navSamping.open
+{
+    width: 200px;
+}
+.navSamping .btn-nav
+{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    margin-top: 80px;
+    right: -15px;
+    background-color: #333;
+    clip-path: polygon(75% 0%, 100% 23%, 100% 80%, 75% 100%, 1% 100%, 0% 0%);
+    border: none;
+}
+.navSamping .btn-nav .fa-chevron-right.open
+{
+    transform: rotate(180deg);
+}
+.navSamping .btn-nav .fa-chevron-right
+{
+    color: #fff;
+}
+.navSamping .navbar
+{
+    width: 100%;
+    height: 39px;
+    display: flex;
+    padding: 3px 0 3px 3px;
+    /* background-color: #FFEC80; */
+    /* background-color: #fff; */
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin: 10px 0;
+}
+.navSamping .navbar.active 
+{
+    background-color: #FFEC80;
+}
+.navSamping a.active .navbar {
+    background-color: #FFEC80;
+}
+
+.navSamping .navbar .grubheader
+{
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 50%;
+}
+.navSamping .navbar .h4
+{
+    color: #ffffff;
+    position: absolute;
+    display: none;
+    margin-left: 0px;
+    transition: left 2s ease;
+}
+.navSamping.open .navbar .h4
+{
+    display: block;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.navSamping a.active .h4
+{
+    color: #000;
+}
+.navSamping .navbar .grubheader span .fa-solid
+{
+    color: #fff;
+}
+
+
+/* responsip */
+/* --------- */
+@media screen and ( max-width: 430px)
+{
+    .header
+    {
+        /* background-color: #333; */
+        width: 100%;
+        height: 60px;
+        padding-top: 0px;
+        bottom: 0;
+        top: auto;
+        position: fixed;
+        z-index: 1000;
+    } 
+    .navSamping 
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        margin-right: 20px;
+        background-color: #FFC300;
+        color: white;
+        padding: 5px 10px 10px 10px;
+        justify-content: space-between;
+        transition: width 0.6s ease;
+    }
+}

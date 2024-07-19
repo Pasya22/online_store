@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containerpp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFEC80;
+}
+.containerpp .kembali
+{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background: transparent;
+    border: none;
+}
+.containerpp .kembali i
+{
+    font-size: 30px;
+}
+.containerpp .card
+{
+    display: flex;
+    /* min-width: 1000px;
+    min-height: 550px; */
+    max-width: 1000px;
+    max-height: 550px;
+    width: 70%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 20px rgba(59, 59, 59, 0.884), inset 0 0 14px rgba(116, 114, 114, 0.884);
+    overflow: hidden;
+}
+.containerpp .card .pp
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+    background-color: #f5e58c;
+    border: 5px solid #FFC300;
+    box-shadow:inset 0 0 100px #e6b000;
+}
+.containerpp .card .pp figure
+{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    margin-top: -5px;
+    background-color: #fff;
+}
+.containerpp .card .pp figure::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+}
+.containerpp .card .pp figure img
+{    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.containerpp .card .pp .editimg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #5c5b5b;
+    border-radius: 50%;
+    box-shadow:inset 0 0 10px #bbbaba;
+}
+.containerpp .card .pp .editimg:active
+{
+    transform: scale(1.02);
+}
+.containerpp .card .pp .editimg .fa-camera
+{
+    font-size: 30px;
+    color: #fff;
+}
+.containerpp .card .content
+{
+    width: 55%;
+    height: 100%;
+    /* position: relative; */
+    /* background-color: #f10000; */
+    margin-left: auto;
+}
+.containerpp .card .content h2
+{
+    color: #000;
+    text-align: center;
+}
+.containerpp .card .content form
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.containerpp .card .content form label
+{
+    display: flex;
+    margin: 20px 0;
+    padding-right: 5px;
+    width: 20%;
+    height: 35px;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.containerpp .card .content form label h5
+{
+    margin-left: auto;
+}
+.containerpp .card .content form input
+{
+    width: 80%;
+    height: 35px;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-image: linear-gradient(to left, #000, #000);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: moveLine 1s linear infinite;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
+    /* outline: none; */
+    background: inherit;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.containerpp .card .content form .mata
+{
+    position: absolute;
+    right: 10px;
+    bottom: 65px;
+    /* margin-top: 250px;
+    margin-left: 40px; */
+}
+.containerpp .card .content form button
+{
+    width: 40%;
+    height: 35px;
+    border: none;
+    background-color: #4c66bb;
+    box-shadow:inset 0 0 10px #c8d3f5;
+}
+.containerpp .card .content form button:active
+{
+    transform: scale(1.04);
+}
+
+/* crop */
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 999; /* Ensure overlay is above other content */
+    display: none; /* Hide overlay by default */
+}
+.overlay .cropper-container {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay .cropper-container img
+{
+    width: 50%
+}
+.overlay .cropper-container .cropper-buttons {
+    position: absolute;
+    top: 20px;
+    right: -65px;
+    transform: translateX(-50%);
+}
+.overlay .cropper-container .cropper-buttons button{
+    border: none;
+    display: block;
+    background: transparent;
+    margin: 10px
+}
+.overlay .cropper-container .cropper-buttons button i
+{
+    font-size: 25px;
+    color: #fff;
+}

@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    /* height: 100vh; */
+    max-width: 1500px;
+    display: flex;
+    background-color: #ffec80;
+    /* overflow: auto; */
+}
+.container .contentDP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    /* height: 100%; */
+    width: 100%;
+    /* max-width: 900px; */
+    /* height: 300px; */
+    margin-right: 20px;
+}
+.container .contentDP .grubatas {
+    display: flex;
+    height: 50px;
+    width: 90%;
+    max-width: 1000px;
+}
+.container .contentDP .grubatas .mode {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #0168ad;
+}
+.container .contentDP .grubatas .mode .fa-windows,
+.fa-bars {
+    font-size: 30px;
+    color: #fff;
+}
+.container .contentDP .grubatas .search {
+    border: 2px solid #2488ca;
+    margin-left: auto;
+    overflow: hidden;
+    height: 40px;
+    border-radius: 5px;
+}
+.container .contentDP .grubatas .search form input {
+    height: 40px;
+    border: none;
+    outline: none;
+}
+.container .contentDP .grubatas .search form button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    overflow: hidden;
+    /* font-size: 25px; */
+    background-color: #2488ca;
+    color: #fff;
+}
+
+/* card barang */
+
+.container .contentDP .grubcard1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* top: 0; */
+    max-width: 1000px;
+    width: 90%;
+    /* height: 100%; */
+    /* overflow: auto; */
+}
+.container .contentDP .grubcard1 .cardBarang {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 40px 0 20px;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+        inset 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.container .contentDP .grubcard1 .cardBarang:active {
+    transform: scale(0.99);
+}
+/* .container .contentDP .cardBarang:hover
+{
+    background-color: #b7e5fcd7;
+} */
+.container .contentDP .grubcard1 .cardBarang figure {
+    width: 70px;
+    height: 70px;
+}
+.container .contentDP .grubcard1 .cardBarang figure .custom-image {
+    width: 100%;
+}
+.container .contentDP .grubcard1 .cardBarang h4 {
+    margin-left: 20px;
+}
+.container .contentDP .grubcard1 .cardBarang .grub-kanan {
+    display: flex;
+    width: auto;
+    margin-left: auto;
+}
+.container .contentDP .grubcard1 .cardBarang span .fa-plus-circle {
+    font-size: 40px;
+    margin-right: 10px;
+}
+.container .contentDP .grubcard1 .cardBarang .edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    background-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.container .contentDP .grubcard1 .cardBarang .edit .fa-pencil {
+    color: #fff;
+}
+
+/* grub card2 */
+
+.container .contentDP .grubcard2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1000px;
+    /* overflow: auto; */
+}
+.container .contentDP .grubcard2 .cardBarang {
+    width: 30%;
+    height: 0px;
+    /* padding-bottom: 30%; */
+    padding-top: 30%;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.container .contentDP .grubcard2 .cardBarang::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Warna overlay dengan transparansi */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.container .contentDP .grubcard2 .cardBarang:hover .overlay {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.container .contentDP .grubcard2 .cardBarang .overlay .edit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+.container .contentDP .grubcard2 .cardBarang .overlay .fa-plus-circle {
+    font-size: 50px;
+    /* height: 30px; */
+    color: #ebe7e7;
+}
+.container .contentDP .grubcard2 .cardBarang .overlay p {
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    height: 20px;
+    color: #ebe7e7;
+    text-align: center;
+}
+.container .contentDP .grubcard2 .cardBarang figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .contentDP .grubcard2 .cardBarang figure .custom-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* keranjang */
+.container .keranjang {
+    width: 0px;
+    height: 100vh;
+    top: 0;
+    position: sticky;
+    padding-top: 100px;
+    background-color: #fff;
+    transition: width 0.6s ease;
+}
+.container .keranjang.open {
+    width: 450px;
+    height: 100vh;
+}
+.container .keranjang .btnkeranjang {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffc300;
+    color: #fff;
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+.container .keranjang.open .btnkeranjang .fa-thumbtack {
+    transform: rotate(50deg);
+}
+.container .keranjang .isikeranjang {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.container .keranjang .isikeranjang table {
+    width: 100%;
+}
+.container .keranjang .isikeranjang table th {
+    text-align: left;
+    margin: 5px 0;
+}
+.container .keranjang .isikeranjang table td {
+    text-align: left;
+    font-size: 14px;
+    padding: 6px 0;
+}
+.container .keranjang .isikeranjang table .grubjmlh {
+    display: flex;
+    text-align: center;
+}
+
+.jmlh {
+    display: flex;
+    width: 50%;
+    border: none;
+    /* border: 1px solid #000; */
+}
+.jmlh input {
+    width: 60%;
+    display: inline-block;
+}
+.jmlh .kk {
+    width: 20%;
+    height: 20px;
+    background-color: #ff1414;
+}
+.jmlh .tt {
+    width: 20%;
+    height: 20px;
+    background-color: #27ff14;
+}
+.tede1 {
+    width: 40%;
+    border: none;
+}
+.tede2 {
+    width: 30%;
+    border: none;
+}
+.tede2 .hps{
+    width: 100%;
+    border: none;
+    height: 30px;
+    background-color: #ff1414;
+}
+
+/* .container .keranjang .isikeranjang table button:first-child {
+    width: 20%;
+    background-color: #ff1414;
+    border: none;
+    color: #fff;
+}
+.container .keranjang .isikeranjang table button:last-child {
+    width: 20%;
+    background-color: #3da004;
+    border: none;
+    color: #fff;
+} */
+
+.container .keranjang .grubtotal {
+    /* width: 100%; */
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+    padding: 0 2%;
+}
+.container .keranjang .grubtotal .total {
+    width: 100%;
+    display: flex;
+}
+.container .keranjang .grubtotal .grubhs {
+    display: flex;
+    width: 100%;
+}
+.container .keranjang .grubtotal .grubhs .hapus {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #ff1414;
+    margin: 3px;
+    border-radius: 5px;
+}
+.container .keranjang .grubtotal .grubhs .simpan {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    color: #000000;
+    background-color: #ebc805;
+    margin: 3px;
+    border-radius: 5px;
+}
+.container .keranjang .grubtotal .bayar {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #252323;
+    background-color: #0deb05;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* resvonsip */
+@media screen and (max-width: 1025px) {
+    .container {
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 430px) {
+    .container .contentDP {
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        padding: 0 2%;
+        /* height: 100%; */
+    }
+    .container .contentDP .grubcard1 {
+        width: 100%;
+        /* height: 100%; */
+    }
+    /* card2 */
+    .container .contentDP .grubcard2 {
+        width: 100%;
+        height: 100%;
+        /* justify-content: row; */
+    }
+    .container .contentDP .grubcard2 .cardBarang {
+        width: 49%;
+        height: 0px;
+        /* padding-bottom: 30%; */
+        padding-top: 49%;
+        background-color: #fff;
+        margin: 10px 0;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    /* keranjang */
+    .container .keranjang {
+        width: 100%;
+        height: 0vh;
+        bottom: 100px;
+        top: auto;
+        overflow: hidden;
+        position: fixed;
+        padding-top: 0px;
+        background-color: #fff;
+        transition: width 0.6s ease;
+    }
+    .container .keranjang.open {
+        width: 100%;
+        height: 70vh;
+    }
+    .container .keranjang .btnkeranjang {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 100px; */
+        top: -10px;
+        left: -40px;
+        width: 40px;
+        height: 40px;
+        background-color: #0168ad;
+        color: #fff;
+        clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    }
+}
+.tambahbarang {
+    position: absolute;
+}
